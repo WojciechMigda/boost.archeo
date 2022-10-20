@@ -67,6 +67,7 @@ def main(
         rel_path: str = os.path.relpath(path, boost_folder)
         if rel_path == '.':
             rel_path = ''
+        fname: str
         for fname in files:
             path: str = os.path.join(rel_path, fname)
             if path in rev_index:
@@ -83,11 +84,13 @@ def main(
         print("[i] No boost libraries were identified.")
     else:
         print("[i] Identified official boost libraries:")
+        lib: str
         for lib in sorted(list(libs)):
             print(lib)
 
     if len(unknowns) != 0:
         print("[i] Files without associated official boost libraries:")
+        fname: str
         for fname in unknowns:
             print(fname)
 
