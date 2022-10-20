@@ -5,7 +5,7 @@ In some of my personal projects which depend on subset of C++ ``boost`` librarie
 
 While this works very well, because ``boost`` version is fixed, no submodules need to be downloaded or system packages need to be installed and everything just compiles and runs, it becomes a headache if you would like to try to upgrade such bundled ``boost`` but you did not keep track of specific ``boost`` libraries which were thrown together.
 
-This script is an attempt to solve this problem by performing `archeological excavation` of present ``boost`` header files and matching them against all header files distributed with specified ``boost`` release.
+This script is an attempt to solve this problem by performing *archeological excavation* of present ``boost`` header files and matching them against all header files distributed with specified ``boost`` release.
 
 Usage
 =====
@@ -28,9 +28,9 @@ Synopsis
   optional arguments:
     -h, --help            show this help message and exit
     -d BOOST_FOLDER, --boost-folder BOOST_FOLDER
-                        Directory with boost include headers.
+                          Directory with boost include headers.
     -v VERSION, --version VERSION
-                        Assumed boost version, e.g. 1.80.0.
+                          Assumed boost version, e.g. 1.80.0.
 
 Dependencies
 ============
